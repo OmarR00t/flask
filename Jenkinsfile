@@ -1,6 +1,6 @@
 pipeline {
   environment {
-    registry = "omarr000t/docker-flask"
+    registry = "omarr000t/flask"
     registryCredential = 'omarr000t'
     dockerImage = ''
   }
