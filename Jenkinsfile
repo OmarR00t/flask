@@ -1,7 +1,7 @@
 pipeline {
   environment {
     registry = "omarr000t/docker-flask"
-    registryCredential = 'dockerhub_id'
+    registryCredential = 'dockerhub'
     dockerImage = ''
   }
   agent any
