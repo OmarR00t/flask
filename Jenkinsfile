@@ -1,6 +1,6 @@
 pipeline {
   environment {
-    registry = omarr000t/docker-flask
+    registry = "omarr000t/docker-flask"
     registryCredential = 'dockerhub_id'
     dockerImage = ''
   }
@@ -29,7 +29,7 @@ pipeline {
     }
     stage('Remove Unused docker image') {
       steps{
-        sh docker rmi $registry:$BUILD_NUMBER   
+        sh "docker rmi $registry:$BUILD_NUMBER"
       }
     }
   }
