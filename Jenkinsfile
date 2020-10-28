@@ -5,7 +5,7 @@ def GIT_REPO="https://github.com/OmarR00t/flask.git"
 def GIT_CREDENTIALS="29ef4442-e29e-46d6-8f6f-f91004fe0bbc"
 def DSSC_CREDENTIALS="DSSC"
 def REPO_CREDENTIALS="omar_almulhim"
-def SCAN_REGISTRY="650143975734.dkr.ecr.ap-southeast-1.amazonaws.com/flaskjenkins"
+def SCAN_REGISTRY="650143975734.dkr.ecr.ap-southeast-1.amazonaws.com"
 def BRANCH_NAME = "main"
 import groovy.json.JsonOutput
 node {
