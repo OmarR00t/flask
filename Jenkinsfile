@@ -21,7 +21,8 @@ node {
     sh "docker build -t $SCAN_REPOSITORY ."
     sh "printenv"
     stage "Send to Repository"
-    sh("eval \$(aws ecr get-login --no-include-email | sed 's|https://||')")
+    sh("eval \$(aws ecr get-login --no-include-email | sed 's|https://||')")*//
+	
     sh "docker tag $SCAN_REPOSITORY:latest $SCAN_REGISTRY/$SCAN_REPOSITORY:$BUILD_ID"
     sh "docker push $SCAN_REGISTRY/$SCAN_REPOSITORY:$BUILD_ID"
  
